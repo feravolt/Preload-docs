@@ -7,7 +7,7 @@ Preload application preloads data to RAM to significantly increase read speeds. 
         - Preloaded data may be released by OS in a while (depends on amount of available RAM) and you will get regular read speeds
         - You don't need to care of unpreloading data - OS will handle it all automatically
         - App's RAM indicator may show incorrect values due to the system may quickly release preloaded data
-        - 100% safe
+        - Safe
 
     If you have ROOT access:
         - You can preload any user apps, files and folders on any supported OS version (read and lock data in RAM  - 'mlock' method)
@@ -20,6 +20,6 @@ Preload application preloads data to RAM to significantly increase read speeds. 
     > With ROOT access app will preload data in RAM and lock them there. All preloaded data will be kept in RAM and won\'t be freed, unless you press the 'Unpreload' button, uninstall Preload app or reboot device.
     > While preloading files on OS 11+ open them from internal storage directory.
     > The circle indicator shows how much RAM is used/available for preload - memory measure method depends on the ROOT access availability.
-    > While preloading apps, their cache files are ignored. Also avoid preloading files with special characters in name.
+    > While preloading apps, their cache files are ignored. If obb or files folders of the app are not fitting in RAM to preload - they will be skipped. Also avoid preloading files with special characters in name.
     > You can't preload data which are bigger in size than available RAM. Also 5-10% of available RAM is always reserved to avoid low available RAM and potential system lags.
 
