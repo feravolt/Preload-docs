@@ -22,5 +22,3 @@ Preload application preloads data to RAM to significantly increase read speeds. 
     > The circle indicator shows how much RAM is used/available for preload - memory measure method depends on the ROOT access availability.
     > While preloading apps, their cache files are ignored. If obb or files folders of the app are not fitting in RAM to preload - they will be skipped. Also avoid preloading files with special characters in name.
     > You can't preload data which are bigger in size than available RAM. Also 5-10% of available RAM is always reserved to avoid low available RAM and potential system lags.
-
-
