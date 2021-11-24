@@ -20,6 +20,7 @@ Preload application preloads data to RAM to significantly increase read speeds. 
          — You have to manually unpreload data if you want to free used RAM
          — Accurate app's RAM indicator
          — No possible OS permission restrictions
+         — OOM score adjustment on supported kernels for preloaded app process
          — Possible risk of OOM in system. Don't overload RAM with preload data
 
 
