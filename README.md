@@ -46,5 +46,8 @@ _— Why read speed after preload is lower then before?_<br>
 _— Why I can't see any files in 'obb', 'data' and 'media' folders?_<br>
 — Because of [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage) introduced by Google since Android 11. It blocks the access to this folders. You can still preload the contents of theese folders for each separate package if you have root access by preloading app from the apps list.
 
+_— What if I uninstall Preload app while there is some preloaded data_<br>
+— It will be automatically unpreloaded within 10 seconds - there is a fuse for that. In worst case just reboot your device.
+
 to be continued.
 <br><br>![Jokes Card](https://readme-jokes.vercel.app/api)<br>
