@@ -31,16 +31,19 @@ Preload application preloads data to RAM to significantly increase read speeds. 
 # Use cases
 Preload is a tool. And the usage scenario of this app is totally up to you. It readaheads(warmups)/locks data files in RAM of read-only files to reduce I/O jitters and highly increases read speed AND also reduces power consumption of MMC/UFS memory (yes, it's minimal but still, the slower is the memory - the better is the result). Few examples of usage:
 - You're listening to music saved in internal memory. You can preload whole music folder (if enough RAM) and: 1) save battery due to no I/O with internal memory; 2) 0-delay playback/rewind due to read speed from RAM is ~10 times faster than from internal memory. Same applies to films/series to watch locally from internal memory.
-- You play game which has _.obb_ (or similar read only file) cache in internal memory. You can preload the file itself from file picker or select the game from the app's list. If you have enough RAM to keep the game process and store it's preloaded files, this will give you 
-the same - a bit of powersaving due to no I/O with internal memory and high increase in read speeds (faster textures, cache, media loading).
+- You play game which has _.obb_ (or similar read only file) cache in internal memory. You can preload the file itself from file picker or select the game from the app's list. If you have enough RAM to keep the game process and store it's preloaded files, this will give you the same - a bit of powersaving due to no I/O with internal memory and high increase in read speeds (faster textures, cache, media loading). With use of _[FDE.AI](https://github.com/feravolt/FDE.AI-docs)_ app this process can be automized.
 - You use [Linux on Android](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy) and install it internal memory as ~2GB _linux.img_ file. You preload it from file picker in app and you get your Linux on Android running as beast.
 - You use your Android as NAS. YOu can preload the most frequently accessed data files/media to increase the access speed for other NAS users.
 
 # FAQ
-_— Why preloaded app is not locked in RAM and I can still close it from recents?_
+_— Why preloaded app is not locked in RAM and I can still close it from recents?_<br>
 — Because Preload is not "lock process in RAM", it's "lock files in RAM".
 
-_— Why read speed after preload is lower then before?_
+_— Why read speed after preload is lower then before?_<br>
 — Because you're low on awailable RAM. System starts to unload cache due to RAM pressure at the same time when you're preloading stuff. This is why the app is recommended on devices with at least 6GB RAM onboard.
 
+_— Why I can't see any files in 'obb', 'data' and 'media' folders?_<br>
+— Because of [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage) introduced by Google since Android 11. It blocks the access to this folders. You can still preload the contents of theese folders for each separate package if you have root access by preloading app from the apps list.
+
 to be continued.
+![Jokes Card](https://readme-jokes.vercel.app/api)<br>
