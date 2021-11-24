@@ -34,7 +34,7 @@ Preload is a tool. And the usage scenario of this app is totally up to you. It r
 - You're listening to music saved in internal memory. You can preload whole music folder (if enough RAM) and: 1) save battery due to no I/O with internal memory; 2) 0-delay playback/rewind due to read speed from RAM is ~10 times faster than from internal memory. Same applies to films/series to watch locally from internal memory.
 - You play game which has _.obb_ (or similar read only file) cache in internal memory. You can preload the file itself from file picker or select the game from the app's list. If you have enough RAM to keep the game process and store it's preloaded files, this will give you the same - a bit of powersaving due to no I/O with internal memory and high increase in read speeds (faster textures, cache, media loading). With use of _[FDE.AI](https://github.com/feravolt/FDE.AI-docs)_ app this process can be automized.
 - You use [Linux on Android](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy) and install it internal memory as ~2GB _linux.img_ file. You preload it from file picker in app and you get your Linux on Android running as beast.
-- You use your Android as NAS. You can preload the most frequently accessed data files/media to increase the access speed for other NAS users.
+- You use your Android as [NAS](https://en.wikipedia.org/wiki/Network-attached_storage) or [DLNA](https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance). You can preload the most frequently accessed data files/media to increase the access speed for other users.
 
 # FAQ
 _— Why preloaded app is not locked in RAM and I can still close it from recents?_<br>
