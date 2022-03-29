@@ -51,3 +51,4 @@ _— What if I uninstall Preload app while there is some preloaded data_<br>
 
 to be continued.
 <br><br>![Jokes Card](https://readme-jokes.vercel.app/api)<br>
+
