@@ -6,10 +6,10 @@ Preload application preloads data to RAM to increase read speeds. It works both 
     >> Without ROOT access the app will preload file data in RAM as cache ('readahead' method). The cache is kept while there is enough free RAM. Once the system needs more free RAM, it will free this cache.
     >> Without ROOT access:
          — You can preload user apps (for OS 10 and below), files and folders - read speeds will be boosted
-         — You can\'t preload apps if you are on OS 11+ due to the system limitations
+         — You can't preload apps if you are on OS 11+ due to the system limitations
          — Preloaded data (cache) may be released by OS in a while (depends on amount of available RAM)
-         — You don\'t need to care about unpreloading data - OS will handle it automatically
-         — App\'s RAM indicator may show incorrect values due to the system quickly releasing cache
+         — You don't need to care about unpreloading data - OS will handle it automatically
+         — App's RAM indicator may show incorrect values due to the system quickly releasing cache
          — Possible restrictions due to OS permissions
 
 
@@ -21,7 +21,7 @@ Preload application preloads data to RAM to increase read speeds. It works both 
          — Accurate app's RAM indicator
          — No possible OS permission restrictions
          — On supported kernels OOM score adjustment will be applied for preloaded app process
-         — Possible risk of running out of memory. Don\'t overload RAM with preload data
+         — Possible risk of running out of memory. Don't overload RAM with preload data
 
 
     >> The indicator shows how much RAM is used/available for preload - measuring method depends on the ROOT access availability.
