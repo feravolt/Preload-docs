@@ -41,7 +41,7 @@ _— Why preloaded app is not locked in RAM and I can still close it from recent
 — Because Preload is not "lock process in RAM", it's "lock files in RAM".
 
 _— Why read speed after preload is lower then before?_<br>
-— Because you're low on awailable RAM. System starts to unload cache due to RAM pressure at the same time when you're preloading stuff. This is why the app is recommended on devices with at least 6GB RAM onboard.
+— Because you're low on available RAM. System starts to unload cache due to RAM pressure at the same time when you're preloading stuff. This is why the app is recommended on devices with at least 6GB RAM onboard.
 
 _— Why I can't see any files in 'obb', 'data' and 'media' folders?_<br>
 — Because of [Scoped Storage](https://developer.android.com/about/versions/11/privacy/storage) introduced by Google since Android 11. It blocks the access to this folders. You can still preload the contents of theese folders for each separate package if you have root access by preloading app from the apps list.
